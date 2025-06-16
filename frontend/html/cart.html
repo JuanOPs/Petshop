@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos - PetShop Online</title>
+    <title>Seu Carrinho - PetShop Online</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Nossos Produtos 🍖🧸</h1>
+        <h1>🛒 Seu Carrinho de Compras</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="products.html">Produtos</a></li>
                 <li><a href="cart.html">🛒 Carrinho</a></li>
-                <li id="nav-auth">
+                 <li id="nav-auth">
                     <a href="login.html">Login</a> | <a href="register.html">Cadastro</a>
                 </li>
                 <li id="nav-user" style="display: none;">
@@ -25,23 +25,22 @@
     </header>
 
     <div class="container">
-        <div id="global-message-container"></div>
-
-        <div class="filters">
-            <label for="category-filter">Filtrar por Categoria:</label>
-            <select id="category-filter">
-                <option value="todos">Todas</option>
-                <option value="gato">Gato 😺</option>
-                <option value="cachorro">Cachorro 🐶</option>
-                <option value="geral">Geral 🐾</option>
-            </select>
+        <div id="global-message-container"></div> <h2>Itens no seu carrinho:</h2>
+        <div id="empty-cart-message" style="display: none;">Seu carrinho está vazio.</div>
+        <div id="cart-items-container">
             </div>
 
-        <div id="loading-message" style="display: none; text-align: center; padding: 20px;">
-            Carregando produtos...
+        <div id="cart-summary" style="margin-top: 20px;">
+            <h3>Total do Carrinho: R$ 0,00</h3>
         </div>
-        <div id="products-grid">
-            </div>
+
+        <div style="text-align: right; margin-top: 20px;">
+            <a href="checkout.html" id="checkout-btn" class="cta-button" style="display: none;">Finalizar Compra</a>
+        </div>
+         <div style="text-align: center; margin-top: 20px;">
+            <a href="products.html" >Continuar comprando</a>
+        </div>
+
     </div>
 
     <footer>
